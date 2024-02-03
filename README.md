@@ -1,6 +1,6 @@
 RECURPAY-ASSIGNMENT
 
 Done by,
-Vachaspati Annaldas
-annaldasvachaspati@gmail.com
-7020270105
+Vachaspati Annaldas,
+E-mail: annaldasvachaspati@gmail.com,
+Phone No.: 7020270105
