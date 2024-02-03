@@ -1,0 +1,335 @@
+h3{
+    font-family: monospace;
+    letter-spacing: 1px;
+    color: rgb(108 108 108);
+}
+
+p{
+    color: rgb(108 108 108);
+}
+
+.prod-image img{
+    width: 70%;
+}
+
+.card{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.card .card-body p{
+    text-align: center;
+}
+
+.card .card-body  input { 
+    outline: 0; 
+    border-width: 0 0 1px; 
+    border-color: #b0b0b0; 
+    text-align: center;
+} 
+
+
+.btn {
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: white;
+    color: rgb(108 108 108);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+.btn1 {
+    border: 1px solid #b0b0b0;
+    background-color: white;
+    color: rgb(108 108 108);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .social span{
+    color: rgb(108 108 108);
+  }
+  
+  .check{
+    border-color: #b0b0b0;
+    color: #000;
+  }
+
+  .check:hover {
+    background-color: #b0b0b0;
+    color: white;
+  }
+
+  .submit {
+    border-color: #000;
+    color: #000;
+  }
+
+  .submit:hover {
+    background-color: #000;
+    color: white;
+  }
+
+  .wrapper1{
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border: 1px solid #b0b0b0;
+    border-radius: 2px;
+  }
+
+  .wrapper1 span{
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    color: #b0b0b0;
+  }
+  .wrapper1 span.num{
+    font-size: 18px;
+    pointer-events: none;
+  }
+
+  .quantity{
+    margin: auto;
+    margin-top: 20px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .quantity p{
+    margin-left: 40px;
+  }
+
+ 
+
+  .social a{
+    color: #000;
+    margin: 50px;
+  }
+
+  .gotoindex{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.gotoindex a{
+    border: 1px solid #6c757d;
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gotoindex a:hover {
+    background-color: #000;
+    color: white;
+  }
+
+  .rating {
+    --dir: right;
+    --fill: #000;
+    --fillbg: rgba(100, 100, 100, 0.15);
+    --heart: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.328l-1.453-1.313q-2.484-2.25-3.609-3.328t-2.508-2.672-1.898-2.883-0.516-2.648q0-2.297 1.57-3.891t3.914-1.594q2.719 0 4.5 2.109 1.781-2.109 4.5-2.109 2.344 0 3.914 1.594t1.57 3.891q0 1.828-1.219 3.797t-2.648 3.422-4.664 4.359z"/></svg>');
+    --star: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.25l-6.188 3.75 1.641-7.031-5.438-4.734 7.172-0.609 2.813-6.609 2.813 6.609 7.172 0.609-5.438 4.734 1.641 7.031z"/></svg>');
+    --stars: 5;
+    --starsize: 1.5rem;
+    --symbol: var(--star);
+    --value: 1;
+    --w: calc(var(--stars) * var(--starsize));
+    --x: calc(100% * (var(--value) / var(--stars)));
+    block-size: var(--starsize);
+    inline-size: var(--w);
+    position: relative;
+    touch-action: manipulation;
+    -webkit-appearance: none;
+    margin-top: 10px;
+  }
+  [dir="rtl"] .rating {
+    --dir: left;
+  }
+  .rating::-moz-range-track {
+    background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+    block-size: 100%;
+    mask: repeat left center/var(--starsize) var(--symbol);
+  }
+  .rating::-webkit-slider-runnable-track {
+    background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+    block-size: 100%;
+    mask: repeat left center/var(--starsize) var(--symbol);
+    -webkit-mask: repeat left center/var(--starsize) var(--symbol);
+  }
+  .rating::-moz-range-thumb {
+    height: var(--starsize);
+    opacity: 0;
+    width: var(--starsize);
+  }
+  .rating::-webkit-slider-thumb {
+    height: var(--starsize);
+    opacity: 0;
+    width: var(--starsize);
+    -webkit-appearance: none;
+  }
+  .rating, .rating-label {
+    display: block;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+  .rating-label {
+    margin-block-end: 1rem;
+  }
+  
+  .rating--nojs::-moz-range-track {
+    background: var(--fillbg);
+  }
+  .rating--nojs::-moz-range-progress {
+    background: var(--fill);
+    block-size: 100%;
+    mask: repeat left center/var(--starsize) var(--star);
+  }
+  .rating--nojs::-webkit-slider-runnable-track {
+    background: var(--fillbg);
+  }
+  .rating--nojs::-webkit-slider-thumb {
+    background-color: var(--fill);
+    box-shadow: calc(0rem - var(--w)) 0 0 var(--w) var(--fill);
+    opacity: 1;
+    width: 1px;
+  }
+  [dir="rtl"] .rating--nojs::-webkit-slider-thumb {
+    box-shadow: var(--w) 0 0 var(--w) var(--fill);
+  }
+
+
+  
+@media only screen and (min-width: 1030px) {
+  .col-md-12{
+      padding: 50px;
+  }
+  .btn1{
+      width: 130px;
+  }
+  .btn{
+      width: 550px;
+  }
+  .card{
+      width: 550px;
+  }
+  .card .card-body input{
+      width: 350px;
+  }
+  .rating{
+      margin-left: 170px;
+  }
+  h3{
+      margin-left: 120px;
+  }
+  .social{
+      margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+  .social{
+      margin-top: 20px;
+    }
+  .social a{
+      margin: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 770px) {
+  .social{
+      margin-top: 20px;
+    }
+  .social a{
+      margin: 20px;
+  }
+  .btn1{
+      margin-top: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .prod-image{
+      margin-top: 30px;
+  }
+  .prod-image img{
+      margin-left: 50px;
+  }
+  h3{
+      margin-top: 20px;
+      margin-left: 40px;
+  }
+  .rating{
+      margin-left: 80px;
+  }
+  .btn{
+      margin-bottom: 30px;
+      margin-left: 50px;
+  }
+  .social{
+      margin-top: 0px;
+  }
+  .social a{
+      margin: 25px;
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+  h3{
+      margin-top: 20px;
+      margin-left: 10px;
+  }
+  .rating{
+      margin-left: 60px;
+  }
+  .btn{
+      margin-bottom: 30px;
+      margin-left: 40px;
+  }
+  .btn1{
+      margin-top: 10px;
+      margin-left: 90px;
+  }
+  .card input{
+      margin-left: 50px;
+  }
+  .social a{
+      margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  h3{
+      margin-top: 20px;
+  }
+  .rating{
+      margin-left: 30px;
+  }
+  .btn{
+      margin-bottom: 30px;
+      margin-left: 10px;
+  }
+  .btn1{
+      margin-top: 10px;
+      margin-left: 30px;
+  }
+  .card input{
+      margin-left: 20px;
+  }
+}

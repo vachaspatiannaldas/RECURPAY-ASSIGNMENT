@@ -1,0 +1,137 @@
+.product{
+    background: url(/images/background.png);
+    width: 100%;
+    height: auto;
+}
+
+.images{
+    position: relative;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-color: transparent;
+    border-width: 5 px;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    transition: border-color 0.6s ease;
+}
+ 
+.active {
+    background-color: rgb(250 178 55);
+}
+ 
+.fade {
+    -webkit-animation-name: fade-image;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade-image;
+    animation-duration: 1.5s;
+}
+ 
+@-webkit-keyframes fade-image {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+ 
+@keyframes fade-image {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+ 
+.image-sliderfade{
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    width: 250px;
+    margin: auto;
+}
+
+.image-sliderfade img{
+    width: 350px!important;
+    height: 220px;
+    margin: 25px -50px;
+}
+
+
+
+.product h3{
+    color: rgb(50 110 105);
+    margin-top: 10px;
+}
+
+.product .head1{
+    color: rgb(250 178 55);
+    margin-top: 20px;
+}
+
+.product .col-md-8 p{
+    margin-top: 20px;
+}
+
+.product p{
+    color: #6c757d!important;
+    font-family: system-ui;
+    font-size: 20px;;
+}
+
+
+
+.cards .card{
+    border: none;
+}
+
+.cards .card h5{
+    color: rgb(80 151 148);
+    margin-top: 10px;
+}
+
+.gotocart{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gotocart a{
+    border: 1px solid #6c757d;
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gotocart a:hover {
+    background-color: #000;
+    color: white;
+  }
+
+@media only screen and (min-width: 600px) {
+    .product .col-md-12{
+        padding: 50px;
+    }
+    .cards{
+        padding: 50px;
+    }
+  }
+
+@media only screen and (max-width: 430px) {
+    .card{
+        margin-left: 110px;
+        margin-top: 10px;
+    }
+  }
+
+@media only screen and (max-width: 380px) {
+    .card{
+        margin-left: 80px;
+    }
+  }
